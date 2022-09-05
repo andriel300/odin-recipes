@@ -2,8 +2,8 @@
 
 ## Build a basic recipe website
 
-### This current project is to show my skills on the recently learned basics of HTML and CSS.
+### This current project is to show my skills on the recently learned basics of HTML and CSS
 
-This is ones of my first step of my journey towards a career in full-stack web development and i'm currently learning from odin-project. There are many paths that you can take in this field and this repository is the foundation for all of the basics skills i have learned and putting the work on it.
+This is one of the first step of my journey towards a career in full-stack web development and i'm currently learning from odin-project. There are many paths that you can take in this field and this repository is the foundation for all of the basics skills i have learned on odin-project and know i'm putting work on it.
 
-I did not master HTML and CSS 100% yet but i did my best to create this first recipe website.
+&#128204; I did not master HTML and CSS 100% yet but i did my best to create this first recipe website.
