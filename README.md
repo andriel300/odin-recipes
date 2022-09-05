@@ -1,6 +1,6 @@
 # odin-recipes
 
-## Build a basic recipe website
+## Build a basic recipe website &#128522;
 
 ### This current project is to show my skills on the recently learned basics of HTML and CSS
 
