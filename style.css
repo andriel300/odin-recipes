@@ -1,33 +1,40 @@
 .main {
-    display: flex;
-    flex-direction: column;
+    color: #bc2e1e;
+    background: #edde9c;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
+        2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd,
+        3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4,
+        5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd,
+        6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
+        8px 7px 0px #5dabcd;
+    color: #bc2e1e;
+    background: #edde9c;
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
 }
 /* A simple, css only, some-what responsive menu */
+/* A simple, css only, (some-what) responsive menu */
+
 body {
-    background: #ccc;
-    font-family: Helvetica, Arial, serif;
+    background: rgb(167, 161, 161);
+    font-family: helvetica, arial, serif;
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
 }
 
 .wrap {
-    display: inline-block;
+    display: block;
     -webkit-box-shadow: 0 0 70px #fff;
     -moz-box-shadow: 0 0 70px #fff;
     box-shadow: 0 0 70px #fff;
-    margin-top: 40px;
-}
-
-.decor {
-    background: #6eaf8d;
-    background: -webkit-linear-gradient(left, #cdebdb 50%, #6eaf8d 50%);
-    background: -moz-linear-gradient(left, #cdebdb 50%, #6eaf8d 50%);
-    background: -o-linear-gradient(left, #cdebdb 50%, #6eaf8d 50%);
-    background: linear-gradient(left, white 50%, #6eaf8d 50%);
-    background-size: 50px 25%;
-    padding: 2px;
-    display: block;
+    margin-top: -10px;
 }
 
 a {
@@ -50,6 +57,7 @@ li {
 ul:after {
     clear: both;
 }
+
 ul:before,
 ul:after {
     content: " ";
@@ -73,7 +81,7 @@ nav {
     border-bottom-left-radius: 8px;
 }
 
-/* Prime */
+/* prime */
 ul.primary li a {
     display: block;
     padding: 20px 30px;
@@ -89,7 +97,92 @@ ul.primary li a:hover {
 }
 
 /* subs */
-
 ul.sub {
     position: absolute;
+    z-index: 200;
+    box-shadow: 2px 2px 0 #bebebe;
+    width: 35%;
+    display: none;
+}
+
+ul.sub li {
+    float: none;
+    margin: 0;
+}
+
+ul.sub li a {
+    border-bottom: 1px dotted #ccc;
+    border-right: none;
+    color: #000;
+    padding: 15px 30px;
+}
+
+ul.sub li:last-child a {
+    border-bottom: none;
+}
+
+ul.sub li a:hover {
+    color: #000;
+    background: #eeeeee;
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+    display: block;
+    background: rgb(115, 223, 160);
+}
+
+/* keeps the tab background white */
+ul.primary li:hover a {
+    background: #fff;
+    color: #666;
+    text-shadow: none;
+}
+
+ul.primary li:hover > a {
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .decor {
+        padding: 3px;
+    }
+
+    .wrap {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    li {
+        float: none;
+    }
+
+    ul.primary li:hover a {
+        background: none;
+        color: #8b8b8b;
+        text-shadow: 1px 1px #000;
+    }
+
+    ul.primary li:hover ul {
+        display: block;
+        background: #272727;
+        color: #fff;
+    }
+
+    ul.sub {
+        display: block;
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+    ul.sub li a {
+        background: #272727;
+        border: none;
+        color: #8b8b8b;
+    }
+
+    ul.sub li a:hover {
+        color: #ccc;
+        background: none;
+    }
 }
