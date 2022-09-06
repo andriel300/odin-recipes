@@ -1,0 +1,47 @@
+.chickenimg img:hover {
+    opacity: 0.5;
+}
+
+.navigation {
+    background: rgb(167, 161, 161);
+    font-family: helvetica, arial, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    -webkit-box-shadow: 0 0 70px #fff;
+    -moz-box-shadow: 0 0 70px #fff;
+    box-shadow: 0 0 70px #fff;
+    margin-top: -10px;
+    color: #fff;
+    display: block;
+    list-style: none;
+    position: relative;
+    text-align: left;
+    /* float: left; */
+    position: relative;
+    background: #2b2b2b;
+    background-image: -webkit-linear-gradient(bottom, #2b2b2b 7%, #333333 100%);
+    background-image: -moz-linear-gradient(bottom, #2b2b2b 7%, #333333 100%);
+    background-image: -o-linear-gradient(bottom, #2b2b2b 7%, #333333 100%);
+    background-image: linear-gradient(bottom, #2b2b2b 7%, #333333 100%);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #0e0e0e;
+    -webkit-box-shadow: 2px 2px 3px #888;
+    -moz-box-shadow: 2px 2px 3px #888;
+    box-shadow: 2px 2px 3px #888;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    border-right: 1px solid #3d3d3d;
+    border-right: none;
+    color: #000;
+}
+.navigation::before,
+.navigation::after{
+    content: " ";
+    display: table;
+}
